@@ -1,0 +1,12 @@
+[package]
+name = "bevy-kenney-assets"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+roxmltree = "0.20.0"
+bevy = "0.14"
+thiserror = "1.0"
+
+[dev-dependencies]
+bevy_asset_loader = { version = "0.21", features = ["2d"] }
