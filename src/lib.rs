@@ -1,12 +1,12 @@
+use bevy_app::{App, Plugin};
 use bevy_asset::{
-    io::Reader, AssetLoader, AsyncReadExt, LoadContext,
-    LoadedAsset,Handle,Asset, AssetApp
+    io::Reader, Asset, AssetApp, AssetLoader, AsyncReadExt,
+    Handle, LoadContext, LoadedAsset,
 };
+use bevy_math::{URect, UVec2};
 use bevy_reflect::TypePath;
-use bevy_sprite::TextureAtlasLayout;
-use bevy_math::{UVec2, URect};
 use bevy_render::texture::Image;
-use bevy_app::{Plugin, App};
+use bevy_sprite::TextureAtlasLayout;
 use thiserror::Error;
 
 /// Kenney makes [amazing assets](https://kenney.nl/).

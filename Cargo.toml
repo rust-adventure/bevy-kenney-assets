@@ -16,3 +16,11 @@ thiserror = "1.0"
 [dev-dependencies]
 bevy_asset_loader = { version = "0.21", features = ["2d"] }
 bevy = "0.14"
+woodpecker_ui = { git = "https://github.com/StarArawn/woodpecker_ui.git", rev = "8e2d0d8" }
+bevy_mod_picking = "0.20"
+
+
+[patch.crates-io]
+bevy_mod_picking = { git = "https://github.com/StarArawn/bevy_mod_picking", branch = "main" }
+bevy_eventlistener = { git = "https://github.com/StarArawn/bevy_eventlistener", branch = "main" }
+bevy_vello = { git = "https://github.com/linebender/bevy_vello", rev = "7fe648ccb9766ecf2ef469f08c9f21093c3544e6" }
