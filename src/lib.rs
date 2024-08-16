@@ -1,11 +1,12 @@
-use bevy::{
-    asset::{
-        io::Reader, AssetLoader, AsyncReadExt, LoadContext,
-        LoadedAsset,
-    },
-    prelude::*,
-    reflect::TypePath,
+use bevy_asset::{
+    io::Reader, AssetLoader, AsyncReadExt, LoadContext,
+    LoadedAsset,Handle,Asset, AssetApp
 };
+use bevy_reflect::TypePath;
+use bevy_sprite::TextureAtlasLayout;
+use bevy_math::{UVec2, URect};
+use bevy_render::texture::Image;
+use bevy_app::{Plugin, App};
 use thiserror::Error;
 
 /// Kenney makes [amazing assets](https://kenney.nl/).
@@ -54,7 +55,7 @@ pub enum KenneySpriteSheetAssetLoaderError {
     Io(#[from] std::io::Error),
 
     #[error("unable to load dependency")]
-    LoadDirect(#[from] bevy::asset::LoadDirectError),
+    LoadDirect(#[from] bevy_asset::LoadDirectError),
 
     #[error("xml parse error")]
     XmlParse(#[from] roxmltree::Error),

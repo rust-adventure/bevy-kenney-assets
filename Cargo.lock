@@ -314,7 +314,13 @@ name = "bevy-kenney-assets"
 version = "0.1.0"
 dependencies = [
  "bevy",
+ "bevy_app",
+ "bevy_asset",
  "bevy_asset_loader",
+ "bevy_math",
+ "bevy_reflect",
+ "bevy_render",
+ "bevy_sprite",
  "roxmltree",
  "thiserror",
 ]

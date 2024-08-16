@@ -1,6 +1,3 @@
-// TODO: bevy_asset_loader currently doesn't
-// support custom asset types.
-
 use bevy::prelude::*;
 use bevy_asset_loader::prelude::*;
 use bevy_kenney_assets::{
