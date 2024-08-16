@@ -63,8 +63,7 @@ fn input(
     images: Res<ImageAssets>,
     mut atlas: Query<&mut TextureAtlas>,
 ) {
-    let kenney_sheet =
-        spritesheets.get(&images.space_sheet).unwrap();
+    spritesheets.get(&images.space_sheet).unwrap();
     let mut atlas = atlas.single_mut();
 
     if input.just_pressed(KeyCode::Space) {
