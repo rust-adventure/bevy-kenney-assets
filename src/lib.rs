@@ -120,8 +120,8 @@ impl AssetLoader for KenneySpriteSheetAssetLoader {
                 layout.add_texture(URect::from_corners(
                     UVec2::new(x, y),
                     UVec2::new(
-                        (x + width),
-                        (y + height),
+                        x + width,
+                        y + height,
                     ),
                 ));
                 Some(SubTexture {
